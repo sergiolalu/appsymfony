@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Entidadprueba{% endblock %}
+
+{% block body %}
+    <h1>Create new Entidadprueba</h1>
+
+    {{ include('entidadprueba/_form.html.twig') }}
+
+    <a href="{{ path('app_entidadprueba_index') }}">back to list</a>
+{% endblock %}

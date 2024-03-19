@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Entidadprueba{% endblock %}
+
+{% block body %}
+    <h1>Edit Entidadprueba</h1>
+
+    {{ include('entidadprueba/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_entidadprueba_index') }}">back to list</a>
+
+    {{ include('entidadprueba/_delete_form.html.twig') }}
+{% endblock %}

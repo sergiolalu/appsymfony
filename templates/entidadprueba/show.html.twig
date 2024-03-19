@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Entidadprueba{% endblock %}
+
+{% block body %}
+    <h1>Entidadprueba</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entidadprueba.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ entidadprueba.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Apellidos</th>
+                <td>{{ entidadprueba.apellidos }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_entidadprueba_index') }}">back to list</a>
+
+    <a href="{{ path('app_entidadprueba_edit', {'id': entidadprueba.id}) }}">edit</a>
+
+    {{ include('entidadprueba/_delete_form.html.twig') }}
+{% endblock %}
